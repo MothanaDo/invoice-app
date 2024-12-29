@@ -17,12 +17,33 @@ use Illuminate\Support\Facades\Validator;
 class invoiceController extends Controller
 {
 
-    public function getInvoice(Request $request)
+    public function getInvoice($id)
     {
+        $invoice = Invoice::with('events')->find($id);
+
+        if (!$invoice) {
+            return response()->json(['message' => 'Invoice not found'], 404);
+        }
+
+        $userEventInvoiced = [];
+        foreach ($invoice->events as $event) {
+            $userEventInvoiced[] = [
+                'user_id' => $event->user_id,
+                'event_type' => $event->price,
+                'price' => $event->price,
+                'event_date' =>  $event-> event_date,
+            ];
+        }
+
         return response()->json(array('success' => true,
-            'status_code' => 200,
-            'message' => 'retrieved Successfully',
+        'status_code' => 200,
+        'list of invoiced events' => $invoice->events,
+        'total price' => $invoice->price,
+        'frequency event in a period' => '',
+        'user event invoiced ' => $userEventInvoiced,
         ));
+        
+        return response()->json($invoice);
     }
 
 

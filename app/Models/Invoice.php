@@ -18,12 +18,12 @@ class Invoice extends Model
     ];
 
 
-    public function customer(): HasOne
+    public function customer()    
     {
         return $this->belongsTo(Customer::class);
     }
 
-    public function events(): BelongsTo
+    public function events()
     {
         return $this->hasMany(InvoiceEvent::class);
     }

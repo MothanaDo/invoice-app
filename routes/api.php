@@ -19,6 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/getInvoice',[invoiceController::class,'getInvoice']);
+Route::get('/invoices/{id}',[invoiceController::class,'getInvoice']);
 
 Route::post('/invoices',[invoiceController::class,'createInvoice']);
