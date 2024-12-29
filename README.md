@@ -18,6 +18,7 @@ This project is to create an invoicing API. The API needs to have endpoints to
 
 ## 🛠️ Tech Stack
 - PHP Laravel.
+- MySQL database.
 
 
 ##  💻 Setup and Installation
