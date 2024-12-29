@@ -8,11 +8,12 @@ This project is to create an invoicing API. The API needs to have endpoints to
 ## 🚀 Features
 1.	POST to /invoices with the parameters START (string, date), END (string, date) and CUSTOMER_ID. The endpoint should calculate the invoice events, amount of events and total price. It will return the invoice_id.
 2.	GET to /invoices/:id will return the details of the invoice. This includes:
-a.	A list of invoiced events
-b.	The frequency of how often an event occurred in a period
-c.	The price for each event
-d.	The total price that the customer needs to pay
-e.	An additional list of users (ids or email addresses), what was invoiced for each user and why so that the customer can double-check if the invoice is correct.
+-	A list of invoiced events
+-	The frequency of how often an event occurred in a period
+-	The price for each event
+-	The total price that the customer needs to pay
+-	An additional list of users (ids or email addresses), what was invoiced for each user and why so that the customer can double-check if the invoice is correct.
+
 
 
 ## 🛠️ Tech Stack
