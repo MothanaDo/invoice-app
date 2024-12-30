@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2446f127-b542-4871-a291-46a213b9eb33",
+		"_postman_id": "955b86b0-f1c9-4a76-b451-0d70aead36dd",
 		"name": "invoice-app",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "8501593"
@@ -10,15 +10,60 @@
 			"name": "Get Invoice",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invoices/7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invoices",
+						"7"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Create Invoice",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/invoices?START=11/01/2024&END=12/29/2024&CUSTOMER_ID=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"invoices"
+					],
+					"query": [
+						{
+							"key": "START",
+							"value": "11/01/2024"
+						},
+						{
+							"key": "END",
+							"value": "12/29/2024"
+						},
+						{
+							"key": "CUSTOMER_ID",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": []
 		}
