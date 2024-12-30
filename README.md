@@ -27,6 +27,11 @@ This project is to create an invoicing API. The API needs to have endpoints to
 https://github.com/MothanaDo/invoice-app/blob/master/Database_Diagram.pdf
 ```
 
+## https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png A Postman collection JSON 
+```
+https://github.com/MothanaDo/invoice-app/blob/master/invoice-app.postman_collection.json
+```
+
 
 
 ##  💻 Setup and Installation
