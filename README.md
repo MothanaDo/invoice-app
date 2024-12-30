@@ -47,7 +47,13 @@ git clone https://github.com/MothanaDo/invoice-app.git
 composer install
 ```
 
-3- Start the development server:
+3- Database Table mitgrate:
+
+```
+php artisan migrate
+```
+
+4- Start the development server:
 
 ```
 php artisan serv
