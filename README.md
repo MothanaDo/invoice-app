@@ -21,13 +21,13 @@ This project is to create an invoicing API. The API needs to have endpoints to
 - MySQL database.
 
 
+
 ## 💾 Database Diagram 
 ```
 https://github.com/MothanaDo/invoice-app/blob/master/Database_Diagram.pdf
 ```
 
 
-https://github.com/MothanaDo/invoice-app/blob/master/Database_Diagram.pdf
 
 ##  💻 Setup and Installation
 1- Clone the repository:
