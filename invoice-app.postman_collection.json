@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "2446f127-b542-4871-a291-46a213b9eb33",
+		"name": "invoice-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8501593"
+	},
+	"item": [
+		{
+			"name": "Get Invoice",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Create Invoice",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
